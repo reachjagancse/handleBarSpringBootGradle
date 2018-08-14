@@ -1,0 +1,33 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath('org.springframework.boot:spring-boot-gradle-plugin:2.0.0.RELEASE')
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'io.spring.dependency-management'
+
+version = '0.1.0-SNAPSHOT'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+sourceCompatibility = 1.8
+
+dependencies {
+    compile 'org.springframework.boot:spring-boot-starter-web'
+    compile 'pl.allegro.tech.boot:handlebars-spring-boot-starter:0.3.0'
+    
+     compile 'com.github.jknack:handlebars-jackson2:4.0.5'
+
+    testCompile 'org.springframework.boot:spring-boot-starter-test:2.0.0.RELEASE'
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.10'
+}

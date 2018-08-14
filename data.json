@@ -1,0 +1,155 @@
+{
+	"objects": [
+		{
+			"id": "dashboard-wrapper-container1",
+			"type": "remix.common.div-control",
+			"input": {
+				"attributes": {
+					"id": "dashboard-wrapper-container",
+					"className": "dashboard-tab-group-wrap main-tab-wrap gssp-row"
+				}
+			},
+			"children": [
+				{
+					"id": "application-root",
+					"type": "remix.common.div-control",
+					"input": {
+						"attributes": {
+							"id": "application-root",
+							"className": "dashboard-cards"
+						}
+					},
+					"children": [
+						{
+							"id": "application-dashboard-quick-access-card-2",
+							"type": "app.enrollmentForms",
+							"input": {
+								"className": "application-dashboard-card",
+								"cardTitle": "You're eligible for great group benefits!",
+								"statusText": "learn all about these benefit plans and enroll in just a few steps. You can start now and finish any time within the enrollment period.",
+								"buttonLabel": "Let's Gets Started",
+								"linkLabel": "How Do I Enroll?",
+								"attributes": {
+									
+								},
+								"data": [
+									{
+										"id": "0",
+										"image": "/images/GroupPersonalAccident.png",
+										"field": "Group Personal Accident"
+									},
+									{
+										"id": "1",
+										"image": "/images/enrollment.png",
+										"field": "Group Credit Life/Bank Assurance"
+									},
+									{
+										"id": "2",
+										"image": "/images/enrollment.png",
+										"field": "Group Life Insurance"
+									},
+									{
+										"id": "3",
+										"image": "/images/GroupPension.png",
+										"field": "Group Pension"
+									}
+								]
+							}
+						},
+						{
+							"id": "application-dashboard-quick-access-card",
+							"input": {
+								"type": "app.infocard",
+								"className": "application-dashboard-card",
+								"cardTitle": "Personal Information",
+								"statusText": "To update this information call your HR Administrator at 1-XXX-XXX-XXXX.",
+								"attributes": {
+									
+								},
+								"data": [
+									{
+										"id": "0",
+										"label": "Name",
+										"field": "John Doe"
+									},
+									{
+										"id": "1",
+										"label": "Date of Birth",
+										"field": "11/11/1988"
+									},
+									{
+										"id": "2",
+										"label": "Unique ID",
+										"field": "xxx-xx-2212"
+									},
+									{
+										"id": "3",
+										"label": "Address",
+										"field": "101 MetLife Way\\r\\nCary, NC 27153"
+									}
+								]
+							}
+						},
+						{
+							"id": "application-dashboard-quick-access-card-1",
+							"attributes": {
+								
+							},
+							"input": {
+								"type": "app.dependentInfo",
+								"className": "application-dashboard-card",
+								"cardTitle": "Dependents",
+								"statusText": "Save your time by checking your dependent Information before you start.",
+								"linkLabel": "ADD A DEPENDENT",
+								"data": [
+									{
+										"id": "0",
+										"name": "John Doe Dependent",
+										"relationship": "Spouse",
+										"dateofbirth": "11/11/1988"
+									},
+									{
+										"id": "2",
+										"name": "Jason Joe Dependent",
+										"relationship": "Child",
+										"dateofbirth": " 11/11/2000"
+									}
+								]
+							}
+						},
+						{
+							"id": "application-dashboard-quick-access-card-3",
+							"type": "app.enrollmentDocs",
+							"input": {
+								"className": "application-dashboard-card",
+								"cardTitle": "Enrollment Forms",
+								"linkLabel": "",
+								"attributes": {
+									
+								},
+								"data": [
+									{
+										"id": "0",
+										"label": "Enrollment Form - Pensions Plus",
+										"file": "/images/promo-skinny-clico-3-x.png",
+										"hidden": true,
+										"filetype": "pdf",
+										"filesize": "12KB"
+									},
+									{
+										"id": "1",
+										"label": "Enrollment Form - Pensions",
+										"file": "/images/promo-skinny-clico-3-x.png",
+										"hidden": true,
+										"filetype": "pdf",
+										"filesize": "11KB"
+									}
+								]
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
